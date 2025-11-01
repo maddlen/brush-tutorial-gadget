@@ -13,7 +13,8 @@
     "shopify:deploy:development": "yarn shopify:config:use:development && shopify app deploy",
     "shopify:deploy:production": "yarn shopify:config:use:production && shopify app deploy",
     "shopify:deploy": "yarn shopify:deploy:production",
-    "shopify:info": "shopify app info"
+    "shopify:info": "shopify app info",
+    "graphql-codegen": "graphql-codegen --project admin && graphql-codegen --project storefront && rm -rf ./_brush/shopify-types/*schema.json"
   },
   "dependencies": {
     "@gadget-client/brush-tutorial": "link:.gadget/client",
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "@react-router/dev": "^7.9.6",
+    "@shopify/api-codegen-preset": "^1.2.1",
     "@shopify/app-bridge-types": "0.4.0",
     "@types/node": "^22.13.14",
     "@types/react": "^19.1.1",

@@ -5,8 +5,12 @@ import { getProductPdf } from "../../../../app/product-download";
 type RequestParams = { Params: { id: string } };
 
 const handler: RouteHandler<RequestParams> = async (context: BrushContext<RequestParams>) => {
-  const product = await getProductPdf(context, context.request.params.id);
-  return context.reply.send({ message: `Requested product data is ${JSON.stringify(product)}` });
+  const productId = context.request.params.id;
+  const productPdf = await getProductPdf(context, productId);
+  return await context.reply
+    .header("Content-Type", "application/pdf")
+    .header("Content-Disposition", `inline; filename="product-${productId}.pdf"`)
+    .send(productPdf);
 };
 
 export default handler;

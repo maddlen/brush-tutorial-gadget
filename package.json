@@ -20,6 +20,7 @@
     "@gadget-client/brush-tutorial": "link:.gadget/client",
     "@gadgetinc/react": "^0.24.1",
     "@gadgetinc/react-shopify-app-bridge": "^0.21.1",
+    "@react-pdf/renderer": "^4.3.1",
     "@react-router/fs-routes": "^7.9.6",
     "@react-router/node": "^7.9.6",
     "@react-router/serve": "^7.9.6",

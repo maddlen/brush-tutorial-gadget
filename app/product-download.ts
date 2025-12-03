@@ -24,7 +24,9 @@ export const getProductPdf = async (context: BrushContext, productId: string) =>
     price: Intl.NumberFormat(context.locale, {
       style: "currency",
       currency: product.variants.nodes[0].price.currencyCode,
-    }).format(product.variants.nodes[0].price.amount),
+    })
+      .format(product.variants.nodes[0].price.amount)
+      .replace(/\u202F|\u00A0/g, " "), // Replace non-breaking spaces otherwise some may render as `/` in PDF
   };
 
   return await makeProductPdf(productData);

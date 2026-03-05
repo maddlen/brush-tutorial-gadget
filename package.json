@@ -13,12 +13,14 @@
     "shopify:deploy:development": "yarn shopify:config:use:development && shopify app deploy",
     "shopify:deploy:production": "yarn shopify:config:use:production && shopify app deploy",
     "shopify:deploy": "yarn shopify:deploy:production",
-    "shopify:info": "shopify app info"
+    "shopify:info": "shopify app info",
+    "graphql-codegen": "graphql-codegen --project admin && graphql-codegen --project storefront && rm -rf ./_brush/shopify-types/*schema.json"
   },
   "dependencies": {
     "@gadget-client/brush-tutorial": "link:.gadget/client",
     "@gadgetinc/react": "^0.24.1",
     "@gadgetinc/react-shopify-app-bridge": "^0.21.1",
+    "@react-pdf/renderer": "^4.3.1",
     "@react-router/fs-routes": "^7.9.6",
     "@react-router/node": "^7.9.6",
     "@react-router/serve": "^7.9.6",
@@ -26,6 +28,7 @@
     "@shopify/app-bridge-react": "4.2.3",
     "@shopify/polaris": "^13.8.0",
     "@shopify/polaris-icons": "^9.3.0",
+    "@shopify/polaris-types": "^1.0.1",
     "@shopify/storefront-api-client": "^1.0.9",
     "gadget-server": "link:.gadget/server",
     "isbot": "^5.1.0",
@@ -34,10 +37,12 @@
     "react-dom": "^19.1.2",
     "react-router": "^7.9.6",
     "shopify-api-node": "^3.15.0",
-    "zod": "^4.2.1"
+    "zod": "^4.2.1",
+    "fastify": "^4.24.2"
   },
   "devDependencies": {
     "@react-router/dev": "^7.9.6",
+    "@shopify/api-codegen-preset": "^1.2.1",
     "@shopify/app-bridge-types": "0.4.0",
     "@types/node": "^22.13.14",
     "@types/react": "^19.1.1",

@@ -31,6 +31,7 @@ export const schema: GadgetModel = {
       customerAccounts: { filterIndex: false, searchIndex: false },
       customerAccountsV2: { filterIndex: false, searchIndex: false },
       customerEmail: { filterIndex: false },
+      customers: true,
       description: { filterIndex: false },
       domain: true,
       eligibleForPayments: { filterIndex: false, searchIndex: false },
@@ -88,6 +89,7 @@ export const schema: GadgetModel = {
       planPublicDisplayName: true,
       preLaunchEnabled: { filterIndex: false, searchIndex: false },
       primaryLocale: { filterIndex: false, searchIndex: false },
+      products: true,
       province: { filterIndex: false },
       provinceCode: { filterIndex: false },
       requiresExtraPaymentsAgreement: {

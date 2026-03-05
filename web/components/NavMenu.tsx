@@ -7,6 +7,9 @@ export function NavMenu() {
       <Link to="/" rel="home">
         Shop Information
       </Link>
+      <Link to="/downloads" rel="downloads">
+        Downloads
+      </Link>
     </AppBridgeNavMenu>
   );
 }

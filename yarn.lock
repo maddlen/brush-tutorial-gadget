@@ -742,6 +742,11 @@
   dependencies:
     deepmerge "^4.3.1"
 
+"@shopify/polaris-types@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@shopify/polaris-types/-/polaris-types-1.0.1.tgz#8df6a07a36ca26cdeef0f37eab8a6f0e2d5e7078"
+  integrity sha512-BZs47atXnaOVqFrCfTeXc6Vz8Vk8Vpj9o3nx/lYTvy9i4pPvd4K4mRKIhjrer2NWITCMvY6+nZ6GE1I9Qfq4rQ==
+
 "@shopify/polaris@^13.8.0":
   version "13.9.5"
   resolved "https://registry.yarnpkg.com/@shopify/polaris/-/polaris-13.9.5.tgz#ed5d2985aa9488e1babb152dd504c8c5419b2154"

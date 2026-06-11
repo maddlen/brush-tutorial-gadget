@@ -59,6 +59,7 @@ export const Layout = ({ children }: { children: React.ReactNode; }) => {
       <head>
         <Meta />
         <script src="https://cdn.shopify.com/shopifycloud/app-bridge.js" suppressHydrationWarning={true}></script>
+        <script src="https://cdn.shopify.com/shopifycloud/polaris.js"></script>
         <Links />
       </head>
       <body>

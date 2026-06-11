@@ -18,7 +18,8 @@
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "types": [
-      "@shopify/app-bridge-types"
+      "@shopify/app-bridge-types",
+      "@shopify/polaris-types"
     ]
   }
 }

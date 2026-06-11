@@ -19,6 +19,7 @@ export default function Index() {
           <Card>
             <BlockStack gap="200" inlineAlign="center">
               <img src="https://assets.gadget.dev/assets/icon.svg" style={{ width: '72px', height: '72px' }} />
+              <s-badge tone="success" icon="status-active">Polaris Web Components active</s-badge>
               <Text variant="bodyMd" as="p" alignment="center">
                 Edit this page's code directly:&nbsp;
                 <Link
